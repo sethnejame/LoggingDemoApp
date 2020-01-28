@@ -19,6 +19,7 @@ namespace LoggingDemo.Pages
 
         public void OnGet()
         {
+            _logger.LogInformation(1234,"All your base are belong to us.");
         }
     }
 }
