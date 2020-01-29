@@ -26,6 +26,21 @@ namespace LoggingDemo.Pages
             _logger.LogWarning("This is a warning log.");
             _logger.LogError("This is an error log.");
             _logger.LogCritical("This is a critical log.");
+
+            // Advanced logging messages
+            // _logger.LogError("The server went down temporarily at {Time}", DateTime.UtcNow);
+            //
+            // try
+            // {
+            //     throw new Exception("YOU FORGOT TO CATCH ME!");
+            // }
+            // catch (Exception ex)
+            // {
+            //     _logger.LogCritical(ex, "This is an example of a bad exception being thrown at {Time}",
+            //         DateTime.UtcNow);
+            //     Console.WriteLine(ex);
+            //     throw;
+            // }
         }
     }
 }
